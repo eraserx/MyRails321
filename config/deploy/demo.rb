@@ -12,6 +12,6 @@ set :scm_command, "/usr/bin/git"
 set :branch, "master"
 set :deploy_via, :remote_cache
 
-role :web, "spree"                   # Your HTTP server, Apache/etc
-role :app, "spree"                   # This may be the same as your `Web` server
-role :db,  "spree", :primary => true # This is where Rails migrations will run
+role :web, "rails321"                   # Your HTTP server, Apache/etc
+role :app, "rails321"                   # This may be the same as your `Web` server
+role :db,  "rails321", :primary => true # This is where Rails migrations will run
