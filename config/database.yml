@@ -8,7 +8,7 @@ development:
   database: db/development.sqlite3
   pool: 5
   timeout: 5000
-  
+
 demo:
   adapter: sqlite3
   database: db/demo.sqlite3
