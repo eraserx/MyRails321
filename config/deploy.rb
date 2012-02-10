@@ -3,13 +3,13 @@ set :default_stage, "demo"
 require 'capistrano/ext/multistage'
 
 # Instruct the Capistrano to respect rvm and gemset
-# set :default_environment, {
-#   'PATH' => "/usr/local/rvm/gems/ruby-1.9.3-p0@spree/bin:/usr/local/rvm/gems/ruby-1.9.3-p0@global/bin:/usr/local/rvm/rubies/ruby-1.9.3-p0/bin:/usr/local/rvm/bin:$PATH",
-#   'RUBY_VERSION' => 'ruby-1.9.3-p0',
-#   'GEM_HOME'     => '/usr/local/rvm/gems/ruby-1.9.3-p0@spree',
-#   'GEM_PATH'     => '/usr/local/rvm/gems/ruby-1.9.3-p0@spree:/usr/local/rvm/gems/ruby-1.9.3-p0@global',
-#   'BUNDLE_PATH'  => '/usr/local/rvm/gems/ruby-1.9.3-p0@global'  
-# }
+set :default_environment, {
+  'PATH' => "/usr/local/rvm/gems/ruby-1.9.3-p0@rails321-exp/bin:/usr/local/rvm/gems/ruby-1.9.3-p0@global/bin:/usr/local/rvm/rubies/ruby-1.9.3-p0/bin:/usr/local/rvm/bin:$PATH",
+  'RUBY_VERSION' => 'ruby-1.9.3-p0',
+  'GEM_HOME'     => '/usr/local/rvm/gems/ruby-1.9.3-p0@rails321-exp',
+  'GEM_PATH'     => '/usr/local/rvm/gems/ruby-1.9.3-p0@rails321-exp:/usr/local/rvm/gems/ruby-1.9.3-p0@global',
+  'BUNDLE_PATH'  => '/usr/local/rvm/gems/ruby-1.9.3-p0@global'  
+}
 
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true

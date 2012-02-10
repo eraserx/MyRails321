@@ -1,5 +1,5 @@
 set :application, "rails321"
-set :repository,  "git@github.com:eraserx/MyRails321"
+set :repository,  "d"
 set :deploy_to, "/var/www/#{application}"
 set :rails_env, "demo"
 set :user, "vagrant"
